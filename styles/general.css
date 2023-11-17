@@ -1,0 +1,35 @@
+body
+{
+  margin-top: 80px;
+  margin-left: 265px;
+  margin-right: 25px;
+  background-color: black;
+  font-family: 'Roboto', sans-serif, Arial;
+}
+
+.tool-tip-type1
+{
+  position: absolute;
+  background-color: rgb(31, 31, 32);
+  border: 1px outset gray;
+  color: rgb(229, 229, 229);
+  font-size: 10px;
+  padding: 4px 6px 4px 6px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.menu-button:hover,
+.youtube-logo-container:hover,
+.search-button:hover, 
+.voice-search-button:hover,
+.upload-button:hover,
+.notifications-button:hover,
+.profile-button:hover,
+.side-bar-button:hover, 
+.side-bar-you-button:hover,
+.side-bar-home-button:hover
+{
+  cursor: pointer;
+}
