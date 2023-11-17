@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube clone dark mode</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/topbar.css">
+    <link rel="stylesheet" href="styles/videos.css">
+  </head>
+
+  <body>
+    <header class="top-bar">
+      <div class="left-section">
+        <button class="menu-button">
+          <img class="menu-icon" src="icons/menu.png">
+        </button>   
+        <div class="youtube-logo-container">
+          <img class="youtube-logo" src="icons/youtube logo.png">
+          <div class="tool-tip-type1">YouTube Home</div>
+        </div>
+      </div>
+
+      <div class="middle-section">
+        <input class="search-bar" type="search" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.png">
+          <div class="tool-tip-type2">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice search.png">
+          <div class="tool-tip-type2">Search with your voice</div>
+        </button>
+      </div>
+
+      <div class="right-section">
+        <button class="upload-button">
+          <img class="upload-icon" src="icons/upload.png">
+          <div class="tool-tip-type2">Create</div>
+        </button>
+        <button class="notifications-button">
+          <img class="notifications-icon" src="icons/notifications.png">
+          <div class="notifications-count">9+</div>
+          <div class="tool-tip-type2">Notifications</div>
+        </button>
+        <button class="profile-button">
+          <img class="profile-icon" src="channel images/my channel photo.png">
+        </button>
+      </div>
+    </header>
+
+    <nav class="side-bar">
+      <div class="side-bar-flex">
+        <div class="general-section">
+          <div class="general-button-container">
+
+            <div class="side-bar-home-button">
+              <div class="button-icon-container">
+                <img class="home-icon" src="icons/home.png">
+              </div>
+              <div class="button-text">Home</div>
+              <div class="tool-tip-type1">Home</div>
+            </div>
+            
+            <div class="side-bar-button">
+              <div class="button-icon-container">
+                <img class="shorts-icon" src="icons/shorts.png">
+              </div>
+              <div class="button-text">Shorts</div>
+              <div class="tool-tip-type1">Shorts</div>
+            </div>
+
+            <div class="side-bar-button">
+              <div class="button-icon-container">
+                <img class="subscriptions-icon" src="icons/subscriptions.png">
+              </div>
+              <div class="button-text">Subscriptions</div>
+              <div class="tool-tip-type1">Subscriptions</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="you-section">
+          <div class="you-button-container">
+            <div class="side-bar-you-button">
+              <div class="you-text">You</div>
+              <img class="greater-than-icon" src="icons/greater than.png">
+              <div class="tool-tip-type1">You</div>
+            </div>
+
+            <div class="side-bar-button">
+              <div class="button-icon-container">
+                <img class="your-channel-icon" src="icons/your channel.png">
+              </div>
+              <div class="button-text">Your channel</div>
+              <div class="tool-tip-type1">Your channel</div>
+            </div>
+
+            <div class="side-bar-button">
+              <div class="button-icon-container">
+                <img class="history-icon" src="icons/history.png">
+              </div>
+              <div class="button-text">History</div>
+              <div class="tool-tip-type1">Your channel</div>
+            </div>
+
+            <div class="side-bar-button">
+              <div class="button-icon-container">
+                <img class="your-videos-icon" src="icons/your videos.png">
+              </div>
+              <div class="button-text">Your videos</div>
+              <div class="tool-tip-type1">Your videos</div>
+            </div>
+
+            <div class="side-bar-button">
+              <div class="button-icon-container">
+                <img class="watch-later-icon" src="icons/watch later.png">
+              </div>
+              <div class="button-text">Watch Later</div>
+              <div class="tool-tip-type1">Watch Later</div>
+            </div>
+
+            <div class="side-bar-button">
+              <div class="button-icon-container">
+                <img class="liked-videos-icon" src="icons/liked videos.png">
+              </div>
+              <div class="button-text">Liked videos</div>
+              <div class="tool-tip-type1">Liked videos</div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="explore-section">
+          <div class="explore-button-container">
+            <div class="explore-text">Explore</div>
+            <div class="explore-button">
+
+              <div class="side-bar-button">
+                <div class="button-icon-container">
+                  <img class="trending-icon" src="icons/trending.png">
+                </div>
+                <div class="button-text">Trending</div>
+                <div class="tool-tip-type1">Trending</div>
+              </div>
+
+              <div class="side-bar-button">
+                <div class="button-icon-container">
+                  <img class="music-icon" src="icons/music.png">
+                </div>
+                <div class="button-text">Music</div>
+                <div class="tool-tip-type1">Music</div>
+              </div>
+
+              <div class="side-bar-button">
+                <div class="button-icon-container">
+                  <img class="gaming-icon" src="icons/gaming.png">
+                </div>
+                <div class="button-text">Gaming</div>
+                <div class="tool-tip-type1">Gaming</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+  
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/G3e-cpL7ofc?si=D3nS8GI0cY99TfeN" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+            </a>
+            <div class="video-time">6:31:24</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@SuperSimpleDev" target="_blank">
+                  <img class="profile-picture" src="channel images/channel-1.jpg">
+                </a>
+                <div class="tool-tip-type1">SuperSimpleDev</div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://youtu.be/G3e-cpL7ofc?si=D3nS8GI0cY99TfeN" target="_blank">
+                HTML &amp; CSS Full Course - Beginner to Pro
+              </a>
+              <p class="video-author">
+                SuperSimpleDev
+              </p>
+              <p class="video-stats">
+                7.2M views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/WTOm65IZneg?si=mvOOyOlencbqDwSQ" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-2.jpg">
+            </a>
+            <div class="video-time">6:14</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@MrBeast" target="_blank"></a>
+                <img class="profile-picture" src="channel images/channel-2.jpeg">
+                <div class="tool-tip-type1">MrBeast</div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://youtu.be/WTOm65IZneg?si=mvOOyOlencbqDwSQ" target="_blank">
+                1,000 Deaf People Hear For The First Time
+              </a>
+              <p class="video-author">
+                MrBeast
+              </p>
+              <p class="video-stats">
+                129M views &#183; 6 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/OSkGsmHeq9s?si=N_CgvTFDlt6sa1-B" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-3.jpg">
+            </a>          
+            <div class="video-time">2:03:40</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@luciusjchloe" target="_blank"></a>
+                <img class="profile-picture" src="channel images/channel-3.jpg">
+                <div class="tool-tip-type1">Anomalucy</div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title"href="https://youtu.be/OSkGsmHeq9s?si=N_CgvTFDlt6sa1-B" target="_blank">
+                The Role of IT Tools in Academics | EduVerse
+              </a>
+              <p class="video-author">
+                Anomalucy
+              </p>
+              <p class="video-stats">
+                92 views &#183; 1 month ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/3rkJ3L5Ce80?si=JQjRmqsKMpkZGv09" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-4.jpg">
+            </a>          
+            <div class="video-time">3:04</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@LilPeepofficial" target="_blank"></a>
+                <img class="profile-picture" src="channel images/channel-4.jpg">
+                <div class="tool-tip-type1">Lil Peep</div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://youtu.be/3rkJ3L5Ce80?si=JQjRmqsKMpkZGv09" target="_blank">
+                lil peep - benz truck (prod. smokeasac)
+              </a>
+              <p class="video-author">
+                Lil Peep
+              </p>
+              <p class="video-stats">
+                273M views &#183; 6 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/h2FDq3agImI?si=AEjd4GMpKDDHFfka" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-5.jpg">
+            </a>          
+            <div class="video-time">17:55</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@daveebbelaar" target="_blank"></a>
+                <img class="profile-picture" src="channel images/channel-5.jpg">
+                <div class="tool-tip-type1">Dave Ebbelaar</div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://youtu.be/h2FDq3agImI?si=AEjd4GMpKDDHFfka" target="_blank">
+                How I'd Learn AI in 2023 (if I could start over)
+              </a>
+              <p class="video-author">
+                Dave Ebbelaar
+              </p>
+              <p class="video-stats">
+                203K views &#183; 3 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/AOoFgFMpOAQ?si=014MEyJWOqaw4PVW" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-6.jpg">
+            </a>          
+            <div class="video-time">1:53:44</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@SpeedSilver" target="_blank"></a>
+                <img class="profile-picture" src="channel images/channel-6.jpg">
+                <div class="tool-tip-type1">SpeedSilver</div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://youtu.be/AOoFgFMpOAQ?si=014MEyJWOqaw4PVW" target="_blank">
+                100 Players Simulate The PURGE in Minecraft
+              </a>
+              <p class="video-author">
+                SpeedSilver
+              </p>
+              <p class="video-stats">
+                17M views &#183; 9 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/l9m3IKG8i88?si=95JqH6kZy2-Ohsw6" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-7.jpg">
+            </a>          
+            <div class="video-time">13:10</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@Mrwhosetheboss" target="_blank"></a>
+                <img class="profile-picture" src="channel images/channel-7.jpg">
+                <div class="tool-tip-type1">Mrwhosetheboss</div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://youtu.be/l9m3IKG8i88?si=95JqH6kZy2-Ohsw6" target="_blank">
+                Can AI really save the World? ft. Bill Gates
+              </a>
+              <p class="video-author">
+                Mrwhosetheboss
+              </p>
+              <p class="video-stats">
+                1M views &#183; 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/I8AcHRQ_2oo?si=sob1rgiCpp52hnux" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-8.jpg">
+            </a>
+            <div class="video-time">45:20</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@Coffeezilla" target="_blank"></a>
+                <img class="profile-picture" src="channel images/channel-8.jpg">
+                <div class="tool-tip-type1">Coffeezilla</div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://youtu.be/I8AcHRQ_2oo?si=sob1rgiCpp52hnux" target="_blank">
+                I Exposed a $500,000,000 Ponzi Scheme
+              </a>
+              <p class="video-author">
+                Coffeezilla
+              </p>
+              <p class="video-stats">
+                3.8M views &#183; 5 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/BHiWygziyso?si=ASyfJwFM3nZ8juO9" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-9.jpg">
+            </a>          
+            <div class="video-time">22:07</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@MarkRober" target="_blank"></a>
+                <img class="profile-picture" src="channel images/channel-9.jpg">
+                <div class="tool-tip-type1">Mark Rober</div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://youtu.be/BHiWygziyso?si=ASyfJwFM3nZ8juO9" target="_blank">
+                World's Largest Devil's Toothpaste Explosion
+              </a>
+              <p class="video-author">
+                Mark Rober
+              </p>
+              <p class="video-stats">
+                88M views &#183; 3 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/6ONRf7h3Mdk?si=DOdEs-5zBtU3IeqX" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-10.jpg">
+            </a>          
+            <div class="video-time">5:23</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@TravisScottXX" target="_blank"></a>
+                <img class="profile-picture" src="channel images/channel-10.jpg">
+                <div class="tool-tip-type1">Travis Scott</div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://youtu.be/6ONRf7h3Mdk?si=DOdEs-5zBtU3IeqX" target="_blank">
+                Travis Scott - SICKO MODE ft. Drake
+              </a>
+              <p class="video-author">
+                Travis Scott
+              </p>
+              <p class="video-stats">
+                1.1B views &#183; 5 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/t69cK3Ih_Og?si=NUIGgUBReEuZ3W0N" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-11.jpg">
+            </a>
+            <div class="video-time">13:09</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@ColinandSamir" target="_blank"></a>
+                <img class="profile-picture" src="channel images/channel-11.jpg">
+                <div class="tool-tip-type1">Colin and Samir</div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://youtu.be/t69cK3Ih_Og?si=NUIGgUBReEuZ3W0N" target="_blank">
+                Why Wordle Won't Go Away
+              </a>
+              <p class="video-author">
+                Colin and Samir
+              </p>
+              <p class="video-stats">
+                80K views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/j-tGHCHVM_o?si=QeJ-aiU-I_kzKBya" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-12.jpg">
+            </a>    
+            <div class="video-time">38:58</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@TheWhyFiles" target="_blank">
+                  <img class="profile-picture" src="channel images/channel-12.jpg">
+                </a>
+                <div class="tool-tip-type1">The Why Files</div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://youtu.be/j-tGHCHVM_o?si=QeJ-aiU-I_kzKBya" target="_blank">
+                Backyard Time Machine: The Time Travel Mystery of Mike “Mad Man” Marcum
+              </a>
+              <p class="video-author">
+                The Why Files
+              </p>
+              <p class="video-stats">
+                2.1M views &#183; 6 days ago
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
